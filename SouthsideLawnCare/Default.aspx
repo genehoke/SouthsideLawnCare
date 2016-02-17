@@ -417,27 +417,27 @@
                             <asp:Panel CssClass="col-md-7 contact-form wow animated fadeInLeft" ID="pnlForm" runat="server" Visible="true">
 
                             <div class="input-field">
-                            <asp:TextBox CssClass="form-control" placeholder="Your Name..." name="name" MaxLength="255" runat="server" ID="txtFName"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="rfvName" CssClass="error" Display="Dynamic" ControlToValidate="txtFName" ErrorMessage="Please enter your name" runat="server"></asp:RequiredFieldValidator>
+                            <asp:TextBox CssClass="form-control" placeholder="Your Name..." ValidationGroup="main" name="name" MaxLength="255" runat="server" ID="txtFName"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvName" CssClass="error" ValidationGroup="main" Display="Dynamic" ControlToValidate="txtFName" ErrorMessage="Please enter your name" runat="server"></asp:RequiredFieldValidator>
                                 </div>
                             <div class="input-field">
-                            <asp:TextBox CssClass="form-control" placeholder="Your Email..." MaxLength="255" name="email" runat="server" ID="txtEmail"></asp:TextBox>
-                                 <asp:RequiredFieldValidator ID="rfvEmail" CssClass="error" Display="Dynamic" ControlToValidate="txtEmail" ErrorMessage="Please enter your email address" runat="server"></asp:RequiredFieldValidator>
-                                <asp:RegularExpressionValidator ID="revEmail" CssClass="error" Display="Dynamic" runat="server" ControlToValidate="txtEmail" ValidationExpression="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" ErrorMessage="That doesn't look like a valid email"></asp:RegularExpressionValidator>
+                            <asp:TextBox CssClass="form-control" placeholder="Your Email..." ValidationGroup="main" MaxLength="255" name="email" runat="server" ID="txtEmail"></asp:TextBox>
+                                 <asp:RequiredFieldValidator ID="rfvEmail" CssClass="error" Display="Dynamic" ValidationGroup="main" ControlToValidate="txtEmail" ErrorMessage="Please enter your email address" runat="server"></asp:RequiredFieldValidator>
+                                <asp:RegularExpressionValidator ID="revEmail" CssClass="error" Display="Dynamic" ValidationGroup="main" runat="server" ControlToValidate="txtEmail" ValidationExpression="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" ErrorMessage="That doesn't look like a valid email"></asp:RegularExpressionValidator>
                                 </div>
                             <div class="input-field">
-                            <asp:TextBox CssClass="form-control" placeholder="Your Phone Number..." MaxLength="255" name="email" runat="server" ID="txtPhone"></asp:TextBox>
-                                 <asp:RequiredFieldValidator ID="rfvPhone" CssClass="error" Display="Dynamic" ControlToValidate="txtEmail" ErrorMessage="Please enter your phone number" runat="server"></asp:RequiredFieldValidator>
+                            <asp:TextBox CssClass="form-control" placeholder="Your Phone Number..." MaxLength="255" ValidationGroup="main" name="phone" runat="server" ID="txtPhone"></asp:TextBox>
+                                 <asp:RequiredFieldValidator ID="rfvPhone" CssClass="error" Display="Dynamic" ValidationGroup="main" ControlToValidate="txtPhone" ErrorMessage="Please enter your phone number" runat="server"></asp:RequiredFieldValidator>
                                 </div>
                             <div class="input-field">
-                            <asp:TextBox CssClass="form-control" placeholder="Subject..." MaxLength="255" name="subject" runat="server" ID="txtSubject"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="rfvSubject" CssClass="error" Display="Dynamic" ControlToValidate="txtSubject" ErrorMessage="Please enter a subject" runat="server"></asp:RequiredFieldValidator>
+                            <asp:TextBox CssClass="form-control" placeholder="Subject..." MaxLength="255" ValidationGroup="main" name="subject" runat="server" ID="txtSubject"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvSubject" CssClass="error" Display="Dynamic" ValidationGroup="main" ControlToValidate="txtSubject" ErrorMessage="Please enter a subject" runat="server"></asp:RequiredFieldValidator>
                                 </div>
                             <div class="input-field">
-                            <asp:TextBox CssClass="form-control" placeholder="Message..." MaxLength="5000" name="message" runat="server" ID="txtMessage"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="rfvMessage" CssClass="error" Display="Dynamic" ControlToValidate="txtMessage" ErrorMessage="Please enter a message" runat="server"></asp:RequiredFieldValidator>
+                            <asp:TextBox CssClass="form-control" placeholder="Message..." MaxLength="5000" ValidationGroup="main" name="message" runat="server" ID="txtMessage"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="rfvMessage" CssClass="error" Display="Dynamic" ValidationGroup="main" ControlToValidate="txtMessage" ErrorMessage="Please enter a message" runat="server"></asp:RequiredFieldValidator>
                                 </div>
-                            <asp:Button runat="server" ID="submit" class="btn btn-blue btn-effect" Text="Send" OnClick="CreateAndSendEmailMessage" />
+                            <asp:Button runat="server" ID="submit" class="btn btn-blue btn-effect" ValidationGroup="main" Text="Send" OnClick="CreateAndSendEmailMessage" />
                         
                         </asp:Panel>
 

@@ -40,6 +40,24 @@ namespace SouthsideLawnCare {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder plhMainContentPlh;
         
         /// <summary>
+        /// updForm2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel updForm2;
+        
+        /// <summary>
+        /// pnlListForm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlListForm;
+        
+        /// <summary>
         /// txtEmail control.
         /// </summary>
         /// <remarks>
@@ -74,5 +92,14 @@ namespace SouthsideLawnCare {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton btnSubmit;
+        
+        /// <summary>
+        /// pnlThanks control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlThanks;
     }
 }

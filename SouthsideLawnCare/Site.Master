@@ -104,24 +104,37 @@
 
             </asp:ContentPlaceHolder>
 
-
+               
 
         <footer id="footer">
 			<div class="container">
 				<div class="row text-center">
 					<div class="footer-content">
-						<div class="wow animated fadeInDown">
-							<p>In A Hurry?</p>
-							<p>Enter your email address below and we will get back to you!</p>
+
+                          <asp:UpdatePanel ID="updForm2" runat="server">
+
+                            <ContentTemplate>
+						<asp:Panel runat="server" ID="pnlListForm" Visible="true">
+                        
+                        <div class="wow animated fadeInDown">
+							<p>Join Our Mailing List</p>
+							<p>Find out about special deals and promotions first!</p>
 						</div>
 						<div class="subscribe-form wow animated fadeInUp">
 							<div class="input-field">
-                                <asp:TextBox CssClass="subscribe form-control" runat="server" placeholder="Enter Your Email..." ID="txtEmail"></asp:TextBox>
-                                 <asp:RequiredFieldValidator ID="rfvEmail" CssClass="error" Display="Dynamic" ControlToValidate="txtEmail" ErrorMessage="Please enter your email address" runat="server"></asp:RequiredFieldValidator>
-                                <asp:RegularExpressionValidator ID="revEmail" CssClass="error" Display="Dynamic" runat="server" ControlToValidate="txtEmail" ValidationExpression="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" ErrorMessage="That doesn't look like a valid email"></asp:RegularExpressionValidator>
-                                <asp:LinkButton ID="btnSubmit" runat="server" CssClass="submit-icon" OnClick="btnSubmit_Click" CausesValidation="true"><i class="fa fa-paper-plane fa-lg"></i></asp:LinkButton>
+                                <asp:TextBox MaxLength="255" EnableViewState="false" CssClass="subscribe form-control" runat="server" placeholder="Enter Your Email..." ID="txtEmail" ValidationGroup="footer"></asp:TextBox>
+                                 <asp:RequiredFieldValidator ID="rfvEmail" CssClass="error" Display="Dynamic" ValidationGroup="footer" ControlToValidate="txtEmail" ErrorMessage="Please enter your email address" runat="server"></asp:RequiredFieldValidator>
+                                <asp:RegularExpressionValidator ID="revEmail" CssClass="error" Display="Dynamic" ValidationGroup="footer" runat="server" ControlToValidate="txtEmail" ValidationExpression="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" ErrorMessage="That doesn't look like a valid email"></asp:RegularExpressionValidator>
+                                <asp:LinkButton ID="btnSubmit" runat="server" CssClass="submit-icon" OnClick="CreateAndSendEmailListMessage" ValidationGroup="footer"><i class="fa fa-paper-plane fa-lg"></i></asp:LinkButton>
 							</div>
 						</div>
+                            </asp:Panel>
+
+                        <asp:Panel ID="pnlThanks" runat="server" Visible="false">
+                        </asp:Panel>
+
+                        </ContentTemplate>
+                              </asp:UpdatePanel>
 						<div class="footer-social">
 							<ul>
 								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
