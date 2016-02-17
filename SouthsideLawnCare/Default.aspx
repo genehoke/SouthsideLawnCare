@@ -1,17 +1,7 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="SouthsideLawnCare._Default" %>
 
- 
-
 <asp:Content ID="plhMainContent" runat="server" ContentPlaceHolderID="plhMainContentPlh">
-
-    
-
-		
-	<form id="mainform" runat="server">
-<asp:ScriptManager ID="scm1" runat="server">
-            </asp:ScriptManager>
        
-    
     <main class="site-content" role="main">
 		
         <!--
@@ -155,9 +145,9 @@
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
 							<div class="service-item">
 								<div class="service-icon">
-									<a href="https://www.facebook.com/Southside-Lawn-Care-1877031139189989/"><i class="fa fa-tasks fa-3x"></i></a>
+									<a href="https://www.facebook.com/Southside-Lawn-Care-1877031139189989/" target="_blank"><i class="fa fa-tasks fa-3x"></i></a>
 								</div>
-								<h3><a href="https://www.facebook.com/Southside-Lawn-Care-1877031139189989/">Like Us On Facebook</a></h3>
+								<h3><a href="https://www.facebook.com/Southside-Lawn-Care-1877031139189989/" target="_blank">Like Us On Facebook</a></h3>
 								<p>Follow us on Facebook for specials! </p>
 							</div>
 						</div>
@@ -168,7 +158,7 @@
 									<i class="fa fa-clock-o fa-3x"></i>
 								</div>
 								<h3>Pricing</h3>
-								<p>We offer weekly and Bi-weekly lawn maintenance. Weekly starts at $20 per visit and Bi-weekly starts at $30 per visit. </p>
+								<p>We offer weekly and Bi-weekly lawn maintenance. Weekly starts at $25 per visit and Bi-weekly starts at $35 per visit. </p>
 							</div>
 						</div>
 					
@@ -480,10 +470,6 @@
 			</section>
 		
 		</main>
-
-        </form>
-
-
 
     </asp:Content>
 
