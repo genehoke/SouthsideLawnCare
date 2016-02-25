@@ -97,7 +97,7 @@
 										<p>Lawn Maintenance<br />Mowing<br />Weed Trimming<br />Blowing<br />Edging<br />Pruning</p>
 									</div>
 									<div class="work-item">
-										<p><b>Seasonal Cleanup</b><br />Spring is right around the corner! Its time to have your yard cleaned up and ready for Spring. We can clean out flower beds and islands, perform leaf removal, and limb and winter debris removal</p>
+										<p><b>Seasonal Cleanup</b><br />Spring is right around the corner! Its time to have your yard cleaned up and ready for spring. We can clean out flower beds and islands, perform leaf removal, and limb and winter debris removal.</p>
 									</div>
 									<div class="work-item">
 										<p><b>Turf Management</b><br />Don't forget to have your lawn aerated and over-seeded for a healthier, fuller lawn. We offer these services as well.</p>
@@ -158,7 +158,7 @@
 									<i class="fa fa-clock-o fa-3x"></i>
 								</div>
 								<h3>Pricing</h3>
-								<p>We offer weekly and Bi-weekly lawn maintenance. Weekly starts at $25 per visit and Bi-weekly starts at $35 per visit. </p>
+								<p>We offer weekly and bi-weekly lawn maintenance. Weekly starts at $25 per visit and bi-weekly starts at $35 per visit. </p>
 							</div>
 						</div>
 					
@@ -168,7 +168,7 @@
 									<i class="fa fa-heart fa-3x"></i>
 								</div>								
 								<h3>Mission Statement</h3>
-								<p>We go the extra mile for our clients every day</p>							
+								<p>We go the extra mile for our clients every day!</p>							
 							</div>
 						</div>
 						
@@ -455,8 +455,8 @@
 							<address class="contact-details">
 								<h3>Contact Us</h3>						
 								<p><i class="fa fa-pencil"></i>Southside Lawn Care<span>PO Box 669</span> <span>Thomaston, GA 30286</span></p><br>
-								<p><i class="fa fa-phone"></i>Phone: (404) 323-8719 </p>
-								<p><i class="fa fa-envelope"></i>southsidelawn2016@gmail.com</p>
+								<p><i class="fa fa-phone"></i>Phone: <a href="tel:+4043238719">(404) 323-8719</a> </p>
+								<p><i class="fa fa-envelope"></i><a href="mailto:southsidelawn2016@gmail.com">southsidelawn2016@gmail.com</a></p>
 							</address>
 						</div>
 			
